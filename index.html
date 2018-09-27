@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title></title>
+   <title>Test in WebStorm</title>
+   <style>
+      * {
+         color: #999;
+      }
+      div {
+         color: #aaa;
+      }
+   </style>
 </head>
 <body>
+<!--<script src="bundle.js"></script>-->
+<input type="text" onchange="console.log('change');" onpaste="console.log('paste')"/>
+<div><span>a</span></div>
+<script>
+//   var input = document.getElementById('input');
+//   input.addEventListener('change', function() {
+//      console.log('on change');
+//   });
+//   var x = 1;
+//   var obj = {
+//     x: 2,
+//     foo: function() {
+//       console.log(this.x);
+//       var f = function() {
+//         console.log(this.x);
+//       };
+//       f();
+//     }
+//   };
+//   var g = obj.foo;
+//   g();
+//   var input = document.getElementById('input');
+//   input.onchange = function() {
+//      console.log('change');
+//   }
+//   input.oninput = function() {
+//      console.log('input');
+//   }
+//   var a = 1;
+//   (function(a) {
+//      var b = 2;
+//      console.log(a, b, c, d);
+//      var c = 3;
+//      d();
+//      function d() {}
+//   })();
 
+   var x = 1;
+   function f() {
+      console.log(x);
+   }
+   function g() {
+      var x = 2;
+      f();
+   }
+   g();
+
+</script>
 </body>
 </html>
